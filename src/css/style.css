@@ -18,6 +18,16 @@ button{
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
+    margin-top: 30px;
+}
+
+button:hover{
+    color: black;
+    background-color: green;
+    width: 210px;
+    height: 55px;
+    font-size: 15px;
+    transition: 0.5s ease-in-out;
 }
 
 .imagem-mario-luigi{
@@ -46,13 +56,100 @@ body{
 }
 
 video{
-    width: 100vw;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .mascara{
     height: 100%;
     width: 100%;
-    background-color: red;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99)85%);
     position: fixed;
     top: 0;
 }
+
+p{
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.link-whatsapp img{
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.link-whatsapp img:hover{
+    height: 60px;
+    transition: 0.5s ease-in-out;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+.header img{
+    height: 60px;
+}
+
+.header a{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header a:hover{
+    color: #c51111;
+    font-size: 26px;
+    transition: 0.5s ease-in-out;
+}
+
+.formulario-fale-conosco{
+    background-color: white;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -230px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.input{
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+}
+
+.textarea{
+    height: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+}
+
+
+.mascara-formulario{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10,12,16, 0.99) 15%, rgba(10,12,16, 0.7) 50%, rgba(10,12,16, 0.99)85%);
+}
+/*
+final
+top: 30%;
+left: 50%
+transform: trasleteX(-50%);
+*/
