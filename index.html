@@ -1,45 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/style.css" />
-    <title>Mario Bros</title>
-  </head>
-  <body>
-    <div class="caixa-mae">
-      <div class="caixa-principal">
-        <img
-          class="logo-mario"
-          src="./src/img/logo.png"
-          alt="logo do Mario Bros"
-        />
-        <p>
-          Encanadores Mario e Luigi, resolvendo seus problema hidráulicos com
-          estilo.
-        </p>
-        <p>
-          Você já se encontrou em uma situação de emergência com encanamento?
-          Vazamentos inesperados, canos entupidos ou torneiras que não param de
-          pingar? Não se preocupe, porque estamos aqui para salvar o dia!
-        </p>
-        <button>Entre em contato</button>
-      </div>
 
-      <div>
-        <img
-          class="imagem-mario-luigi"
-          src="./src/img/mario.png"
-          alt="logo Mario e Luigi"
-        />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <title>Mario Bros</title>
+</head>
+
+<body>
+  <div class="mascara-formulario" onclick="fecharForm()"></div>
+
+  <div class="header">
+    <img src="./src/img/logo-header.png" / alt="logo mario">
+    <a>Home</a>
+    <a>Nossos serviços</a>
+    <a>Fale Conosco</a>
+  </div>
+
+  <div class="caixa-mae">
+    <div class="caixa-principal">
+      <img class="logo-mario" src="./src/img/logo.png" alt="logo do Mario Bros" />
+      <p>
+        Encanadores Mario e Luigi, resolvendo seus problema hidráulicos com
+        estilo.
+      </p>
+      <p>
+        Você já se encontrou em uma situação de emergência com encanamento?
+        Vazamentos inesperados, canos entupidos ou torneiras que não param de
+        pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+      </p>
+      <button onclick="abrirForm()">Entre em contato</button>
     </div>
 
-    <div class="caixa-video">
-      <video src="./src/img/video.mp4" autoplay muted loop></video>
-      <div class="mascara"></div>
+    <div>
+      <img class="imagem-mario-luigi" src="./src/img/mario.png" alt="logo Mario e Luigi" />
     </div>
+  </div>
 
-  </body>
+  <div class="caixa-video">
+    <video src="./src/img/video.mp4" autoplay muted loop></video>
+    <div class="mascara"></div>
+  </div>
+
+  <a class="link-whatsapp" href="https://wa.me/5545999555555?text=Quero%20ajuda%20dos%20irm%C3%A3os%20Mario">
+    <img src="./src/img/whatsapp.png" alt="link para whatsapp" />
+  </a>
+
+  <form class="formulario-fale-conosco" action="https://formcarry.com/s/fxRzGt6PNnE" method="POST"
+    enctype="multipart/form-data">
+    <input class="input" type="text" name="nome" placeholder="Seu nome">
+    <input class="input" type="tel" name="tel" placeholder="Seu telefone">
+    <input class="input" type="email" name="email" placeholder="Seu email">
+    <textarea class="textarea" name="problema" placeholder="Digite seu problema aqui"></textarea>
+    <button type="submit">Pedir orçamento</button>
+  </form>
+
+</body>
+<script src="./src/js/script.js"></script>
+
 </html>
